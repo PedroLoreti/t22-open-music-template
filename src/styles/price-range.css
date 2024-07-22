@@ -1,0 +1,9 @@
+.container__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title--h3 {
+    font-size: 22px;
+    font-weight: 600;
+}

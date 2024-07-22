@@ -4,28 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
   </head>
   <body>
     <!-- CABEÇALHO -->
     <header>
-      <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
+      <div class="header__container">
+        <h1 class="title--h1"><span class="title__span">o</span>pen <span class="title__span">m</span>usic</h1>
+        <img src="src/assets/icon/moon-icon.svg" alt="noturno">
+      </div>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
       <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <div class="container__gender--main">
+          <h2 class="title--h2">Gênero Musical</h2>
+          <div class="container__gender--inside">
+            <p>Todos</p>
+            <p>Pop</p>
+            <p>MPB</p>
+            <p>Forró</p>
+            <p>Samba</p>
+            <p>Baião</p>
+            <p>Rap</p>
+            <p>Hip-Hop</p>
+          </div>
+        </div>
       </section>
 
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
       <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <div class="container__price">
+          <h2 class="title--h2">Definir Preço</h2>
+          <h3 class="title--h3">Até <span class="title__span">R$  100</span></h3>
+        </div>
+        <input type="range">
       </section>
 
       <!-- SEÇÃO DE ALBUNS -->
       <section>
-        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <div class="container__album">
+          <h2 class="Albuns Encontrados"></h2>
+          <div class="container__album--inside">
+            <ul>
+              <li>
+                <img src="/src/assets/imgs/cover-1.jpg" alt="">
+                <h3>Acabou o Chorare</h3>
+                <div class="album__container--descricao">
+                  <p>Novos Baianos</p>
+                  <p>MPB</p>
+                </div>
+                <p>R$ 137,91</p>
+                <button>Comprar</button>
+              </li>
+              <li>
+                <img src="/src/assets/imgs/cover-2.jpg" alt="">
+                <h3>The Wall</h3>
+                <div class="album__container--descricao">
+                  <p>Pink Floyd</p>
+                  <p>Rock</p>
+                </div>
+                <p>R$ 123,56</p>
+                <button>Comprar</button>
+              </li>
+              <li>
+                <img src="/src/assets/imgs/cover-3.jpg" alt="">
+                <h3>To Pimp a Butterfly</h3>
+                <div class="album__container--descricao">
+                  <p>Kendrick Lamar</p>
+                  <p>Rap</p>
+                </div>
+                <p>R$ 102,66</p>
+                <button>Comprar</button>
+              </li>
+              <li>
+                <img src="/src/assets/imgs/cover-2.jpg" alt="">
+                <h3>The Wall</h3>
+                <div class="album__container--descricao">
+                  <p>Pink Floydr</p>
+                  <p>Rock</p>
+                </div>
+                <p>R$ 123,56</p>
+                <button>Comprar</button>
+              </li>
+              <li>
+                <img src="/src/assets/imgs/cover-1.jpg" alt="">
+                <h3>Acabou o Choroa</h3>
+                <div class="album__container--descricao">
+                  <p>Novos Baianos</p>
+                  <p>MPB</p>
+                </div>
+                <p>R$ 137,91</p>
+                <button>Comprar</button>
+              </li>
+              <li>
+                <img src="/src/assets/imgs/cover-3.jpg" alt="">
+                <h3>To Pimp a Butterfly</h3>
+                <div class="album__container--descricao">
+                  <p>Kendrick Lamar</p>
+                  <p>Rap</p>
+                </div>
+                <p>R$ 102,66</p>
+                <button>Comprar</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>

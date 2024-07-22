@@ -1,0 +1,19 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px;
+    border-bottom: 3px solid var(--color-brand-2)
+}
+
+.title--h1 {
+    font-size: 40px;
+}
+.title__span {
+    color: var(--color-brand-1);
+}
+
+.header__container img {
+    padding: 9px 14px;
+    background-color: var(--color-gray-6);
+    border-radius: 5px;
+}

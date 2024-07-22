@@ -1,0 +1,22 @@
+.container__gender--main {
+    gap: 14px;
+}
+
+.title--h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--color-gray-2);
+}
+
+.container__gender--inside {
+    display: flex;
+    padding: 16px 0px;
+    gap: 25px;
+    align-items: center;
+}
+
+.container__gender--inside p {
+    padding: 10.2px 11.2px;
+    border-radius: 4px;
+    background-color: var(--color-gray-6);
+}
