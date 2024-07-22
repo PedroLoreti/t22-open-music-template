@@ -1,9 +1,19 @@
+header {
+    position: sticky;
+    top: 0rem;
+}
+
+
 .header__container {
     display: flex;
     justify-content: space-between;
     padding: 48px 0px;
+    margin-bottom: 3rem;
+    background-color: var(--color-gray-8);
+
     border-bottom: 3px solid var(--color-brand-2)
 }
+
 
 .title--h1 {
     font-size: 40px;

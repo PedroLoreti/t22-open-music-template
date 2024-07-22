@@ -3,13 +3,12 @@
 @import url(/src/styles/globalStyles.css);
 @import url(/src/styles/genres.css);
 @import url(/src/styles/price-range.css);
+@import url(/src/styles/albums.css);
 
 
-* {
-    background-color: var(--color-gray-8);
-}
 body {
     font-family: "Inter", sans-serif;
     max-width: 1024px;
     margin: auto;
+    padding: 50px;
 }
