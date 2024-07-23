@@ -21,6 +21,7 @@
     width: clamp(15.625rem, 7.039rem + 19.079vw, 19.25rem);
     object-fit: cover;
     border-radius: 4px;
+    height: 290px;
 }
 .album__container--descricao, .price__button--container {
     display: flex;
@@ -42,7 +43,7 @@
     font-weight: 600;
 }
 
-.price__button--container button {
+.button__buy {
     padding: 10px;
     border-radius: 4px;
     color: white;
@@ -51,7 +52,7 @@
 
 }
 
-.price__button--container button:hover {
+.button__buy:hover {
     background-color: var(--color-brand-1);
 }
 @media (max-width: 1038px) {

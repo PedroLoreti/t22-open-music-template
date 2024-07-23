@@ -25,3 +25,9 @@
 .button__gender:hover {
     border-color: black;
 }
+
+@media (max-width: 720px) {
+    .container__gender--inside {
+        flex-wrap: wrap;
+    }
+}
