@@ -1,5 +1,6 @@
 import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDatabase.js";
+import { darkMode } from "./theme.js";
 
 function genresLogic() {
     const buttons = document.querySelectorAll('.button__gender');
@@ -16,6 +17,8 @@ genresLogic()
 
 function routine() {
     applyInputRangeStyle()
+    darkMode()
+    leitorInput()
 }
 
 routine()
@@ -25,7 +28,6 @@ function createAlbumCard(album) {
     // Criação do elemento de lista
     const card = document.createElement('li');
     card.className = 'list__itens';
-    console.log(card)
 
     // Criação e configuração da imagem
     const img = document.createElement('img');
@@ -84,14 +86,39 @@ function createAlbumCard(album) {
 }
 
 function renderAlbumCards(albums) {
-    const container = document.querySelector('ul')
+    const container = document.querySelector('ul');
+    const input = document.querySelector('#input__range');
 
-    container.innerHTML = '';
-    albums.forEach(album => {
-        const albumCard = createAlbumCard(album);
-        
-        container.appendChild(albumCard);
-    });
+    function updateInput() {
+        const inputValue = parseFloat(input.value);
+
+        const filteredAlbums = albums.filter(album => album.price <= inputValue);
+
+        container.innerHTML = '';
+        filteredAlbums.forEach(album => {
+            const albumCard = createAlbumCard(album);
+            container.appendChild(albumCard);
+        });
+    }
+
+    input.addEventListener('input', updateInput);
+    updateInput();
+ 
 }
 
 renderAlbumCards(albumList)
+
+
+function leitorInput() {
+    const input = document.querySelector('#input__range');
+    const rangePrice = document.querySelector('.range__price')
+    
+    function updateRangeValue () {
+        const inputValue = input.value
+        rangePrice.textContent = `R$ ${parseFloat(inputValue).toFixed(2)}`;
+    }
+
+    input.addEventListener('input', updateRangeValue);
+
+    updateRangeValue();
+}

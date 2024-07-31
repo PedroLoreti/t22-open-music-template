@@ -12,7 +12,9 @@
     <header>
       <div class="header__container">
         <h1 class="title--h1"><span class="title__span">o</span>pen <span class="title__span">m</span>usic</h1>
-        <img src="src/assets/icon/moon-icon.svg" alt="noturno">
+        <button class="theme__mode">
+          <img src="src/assets/icon/moon-icon.svg" alt="noturno" class="icon__theme">
+        </button>
       </div>
     </header>
 
@@ -38,7 +40,7 @@
         <div class="container__price--main">
           <div class="container__price--inside">
             <h2 class="title--h2">Definir Preço</h2>
-            <h3 class="title--h3">Até <span class="title__span">R$  100</span></h3>
+            <h3 class="title--h3">Até <span class="title__span range__price">R$  150</span></h3>
           </div>
           <input type="range" id="input__range" min="0" max="150" value="150">
         </div>
@@ -47,7 +49,7 @@
       <!-- SEÇÃO DE ALBUNS -->
       <section>
         <div class="container__album">
-          <h2 class="title--h2">Albuns Encontrados</h2>
+          <h2 class="title--h2 title__section--album">Albuns Encontrados</h2>
           <div class="container__album--inside">
             <ul>
               <li class="list__itens">

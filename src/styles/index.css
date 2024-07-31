@@ -12,3 +12,9 @@ body {
     margin: auto;
     padding: 50px;
 }
+
+
+body.dark .title--h1,
+body.dark .title--h2 {
+    color: var(--color-gray-7);
+}

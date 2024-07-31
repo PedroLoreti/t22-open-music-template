@@ -18,12 +18,28 @@
     border: none;
     border: 1px solid transparent;
 }
-.button__gender.black {
+
+body.dark .button__gender {
+    background-color: var(--color-gray-2);
+    color: var(--color-gray-6)
+}
+
+.black {
     background-color: black;
     color: white;
 }
+
+body.dark .black {
+    color: var(--color-gray-2);
+    background-color: var(--color-gray-7);
+}
+
 .button__gender:hover {
     border-color: black;
+}
+
+body.dark .button__gender:hover {
+    border-color: white;
 }
 
 @media (max-width: 720px) {

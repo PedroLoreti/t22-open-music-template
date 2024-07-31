@@ -1,6 +1,5 @@
 export function applyInputRangeStyle() {
     const inputRange = document.querySelector("#input__range");
-    console.log(inputRange)
     inputRange.addEventListener("input", (event) => {
       const currentInputValue = event.target.value;
       const runnableTrackProgress = (currentInputValue / inputRange.max) * 100;

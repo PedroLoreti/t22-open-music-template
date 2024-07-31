@@ -3,6 +3,10 @@ header {
     top: 0rem;
 }
 
+body.dark, body.dark .header__container {
+    background-color: var(--color-gray-1);
+}
+
 
 .header__container {
     display: flex;
@@ -10,16 +14,24 @@ header {
     padding: 48px 0px;
     margin-bottom: 3rem;
     background-color: var(--color-gray-8);
-
     border-bottom: 3px solid var(--color-brand-2)
 }
-
 
 .title--h1 {
     font-size: 40px;
 }
 .title__span {
     color: var(--color-brand-1);
+}
+
+.theme__mode {
+    background: transparent;
+    border: none;
+    padding: 0px;
+}
+
+body.dark .icon__theme {
+    background-color: var(--color-gray-3);
 }
 
 .header__container img {
