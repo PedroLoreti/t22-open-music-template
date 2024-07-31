@@ -123,10 +123,10 @@ function renderAlbumCards(albums) {
 
 function leitorInput() {
     const input = document.querySelector('#input__range');
-    const rangePrice = document.querySelector('.range__price')
+    const rangePrice = document.querySelector('.range__price');
     
     function updateRangeValue () {
-        const inputValue = input.value
+        const inputValue = input.value;
         rangePrice.textContent = `R$ ${parseFloat(inputValue).toFixed(2)}`;
     }
 
