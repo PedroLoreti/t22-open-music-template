@@ -1,6 +1,9 @@
 import { applyInputRangeStyle } from "./inputRange.js";
-import { albumList } from "./albumsDatabase.js";
+// import { albumList } from "./albumsDatabase.js";
 import { darkMode } from "./theme.js";
+import { fetchMusics } from "./api.js";
+
+
 
 function genresLogic() {
     const buttons = document.querySelectorAll('.button__gender');
@@ -8,22 +11,32 @@ function genresLogic() {
         button.addEventListener('click', () => {
             buttons.forEach(btn => btn.classList.remove('black'));
 
-            button.classList.add('black')
-        })
-    })
+            button.classList.add('black');
+        });
+    });
 }
 
-genresLogic()
+genresLogic();
 
 function routine() {
-    applyInputRangeStyle()
-    darkMode()
-    leitorInput()
+    applyInputRangeStyle();
+    darkMode();
+    leitorInput();
+    mostrarMusics();
 }
 
 routine()
 
-
+async function mostrarMusics() {
+    try {
+      const musics = await fetchMusics();
+      renderAlbumCards(musics)
+      return musics
+    } catch (error) {
+      console.error('Falha ao obter dados dos álbuns:', error);
+    }
+}
+  
 function createAlbumCard(album) {
     // Criação do elemento de lista
     const card = document.createElement('li');
@@ -106,7 +119,6 @@ function renderAlbumCards(albums) {
  
 }
 
-renderAlbumCards(albumList)
 
 
 function leitorInput() {
