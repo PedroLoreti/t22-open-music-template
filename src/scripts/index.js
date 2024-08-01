@@ -1,7 +1,6 @@
-import { applyInputRangeStyle } from ".inputRange.js";
-// import { albumList } from ".albumsDatabase.js";
-import { darkMode } from ".theme.js";
-import { fetchMusics } from ".api.js";
+import { applyInputRangeStyle } from "./inputRange.js";
+import { darkMode } from "./theme.js";
+import { fetchMusics } from "./api.js";
 
 
 
