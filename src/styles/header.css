@@ -19,6 +19,7 @@ body.dark, body.dark .header__container {
 
 .title--h1 {
     font-size: 40px;
+    font-weight: 600;
 }
 .title__span {
     color: var(--color-brand-1);
